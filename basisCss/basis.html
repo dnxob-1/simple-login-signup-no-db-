@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="frontEndCode.js"></script>
+  </head>
+
+  <body>
+    <section class="signupWholes">
+      <div class="signups" id="signups1">
+        <div class="content">
+          <form>
+            <div class="intro">
+              <h2 id="introHeader">Sign up</h2>
+            </div>
+
+            <div class="accountLab">
+              <label id="accName1">Account Name</label>
+            </div>
+
+            <div class="accountInput">
+              <input
+                type="text"
+                id="accName"
+                placeholder="Username"
+                name="accName"
+              />
+            </div>
+
+            <div class="passLab">
+              <label id="accPassword1">Account Password</label>
+            </div>
+
+            <div class="passInput">
+              <input
+                type="password"
+                id="accPassword"
+                name="accPassword"
+                placeholder="Password"
+                autocomplete="off"
+                minlength="8"
+                maxlength="20"
+                size="20"
+                required
+              />
+              <input type="checkbox" id="seePass" onclick="checkOnVisi()" />Show
+              Password
+            </div>
+
+            <div class="submts">
+              <a href="basis2.html"
+                ><input type="submit" id="signupButton" value="Sign Up"
+              /></a>
+            </div>
+
+            <div class="loginSend">
+              <p>Have an account? <a href="#" id="loginSend1">Log In</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="loginWholes" id="logins1">
+      <div class="logins">
+        <div class="content">
+          <form>
+            <div class="intro2">
+              <h2 id="introHeader2">Log In</h2>
+            </div>
+
+            <div class="accountLab2">
+              <label id="accName3">Account Name</label>
+            </div>
+
+            <div class="accountInput2">
+              <input
+                type="text"
+                id="accName2"
+                placeholder="Username"
+                name="accName"
+              />
+            </div>
+
+            <div class="passLab2">
+              <label id="accPassword3">Account Password</label>
+            </div>
+
+            <div class="passInput2">
+              <input
+                type="password"
+                id="accPassword2"
+                name="accPassword"
+                placeholder="Password"
+                autocomplete="off"
+                minlength="8"
+                maxlength="20"
+                size="20"
+                required
+              />
+              <input
+                type="checkbox"
+                id="seePass2"
+                onclick="checkOnVisi2()"
+              />Show Password
+            </div>
+
+            <div class="submts2">
+              <a href="basis2.html"
+                ><input
+                  type="submit"
+                  id="loginButton"
+                  value="Log In"
+                  onclick="checker1()"
+              /></a>
+            </div>
+
+            <div class="signupSend" id="signupSend1">
+              <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var signupLink = document.getElementById("loginSend1");
+        var loginLink = document.getElementById("signupSend1");
+        var wholeSection1 = document.getElementById("signups1");
+        var wholeSection2 = document.getElementById("logins1");
+
+        signupLink.addEventListener("click", function (event) {
+          event.preventDefault();
+          wholeSection1.style.display = "none";
+          wholeSection2.style.display = "flex";
+          wholeSection2.style.opacity = "1";
+          document.getElementById("accPassword").value = "";
+          document.getElementById("accPassword").placeholder = "Password";
+          document.getElementById("accName").value = "";
+          document.getElementById("accName").placeholder = "Username";
+          document.getElementById("seePass").checked = false;
+        });
+
+        loginLink.addEventListener("click", function (event) {
+          event.preventDefault();
+          wholeSection2.style.display = "none";
+          wholeSection1.style.display = "flex";
+          wholeSection1.style.opacity = "1";
+          document.getElementById("accPassword2").value = "";
+          document.getElementById("accPassword2").placeholder = "Password";
+          document.getElementById("accName2").value = "";
+          document.getElementById("accName2").placeholder = "Username";
+          document.getElementById("seePass2").checked = false;
+        });
+      });
+    </script>
+  </body>
+</html>

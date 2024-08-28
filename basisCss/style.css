@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: JetBrainsMono;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #90ee90;
+}
+
+.signupWholes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #90ee90;
+  position: fixed;
+}
+
+.loginWholes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #90ee90;
+  position: fixed;
+}
+
+.signups {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 25%;
+  height: 58%;
+  padding: 25px;
+  padding-bottom: 1px;
+}
+
+.logins {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 25%;
+  height: 58%;
+  padding: 25px;
+  padding-bottom: 1px;
+}
+
+.signups:hover,
+.logins:hover {
+  border: 1px solid black;
+}
+
+#accPassword,
+#accPassword2,
+#accName,
+#accName2 {
+  border: 1.8px solid black;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.accountLab,
+.passLab,
+.intro,
+.accountLab2,
+.passLab2,
+.intro2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 11px;
+}
+
+#loginButton,
+#signupButton {
+  border: 1px solid #ffffff;
+  background-color: #8aacb8;
+  border-radius: 4px;
+  width: 100%;
+  height: 15%;
+  padding: 5px;
+  margin-top: 21px;
+  padding-left: 1px;
+  padding-right: 1px;
+  font-size: 13px;
+}
+
+#loginButton:hover,
+#signupButton:hover {
+  background-color: #add8e6;
+  border-color: black;
+}
+
+#seePass,
+#seePass2 {
+  margin-top: 10px;
+}
+
+.loginSend,
+.signupSend {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 25px;
+}
+
+#warning,
+#warning2 {
+  justify-content: bottom;
+  text-align: center;
+  color: Red;
+  background-color: #90ee90;
+}
+
+.greeter {
+  text-align: center;
+}
+
+#additionalInfo {
+  text-align: center;
+}
+
+#fish {
+  text-align: center;
+}
+
+#fishImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
